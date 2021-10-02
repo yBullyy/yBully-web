@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/style.min.css";
+import "../css/style.css";
 import Explore from "./components/Explore";
 import Features from "./components/Features";
 import Navbar from "./components/Navbar";

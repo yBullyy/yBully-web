@@ -2047,7 +2047,7 @@ p {
 	-webkit-text-fill-color: transparent;
 }
 .clip-text.clip-text-image {
-	background-image: url("../images/01.jpg");
+	/* background-image: url("../images/01.jpg"); */
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -2959,7 +2959,7 @@ p {
 	clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
 }
 .bg-animation-left.task-management-home:after {
-	background: url("../images/bg.png") #2f55d4;
+	/* background: url("../images/bg.png") #2f55d4; */
 	width: 100%;
 	clip-path: circle(65% at 40% 25%);
 }
@@ -3184,7 +3184,7 @@ p {
 	height: 40px;
 	top: 30px;
 	left: 80%;
-	background: url("../images/process.png") center center no-repeat;
+	/* background: url("../images/process.png") center center no-repeat; */
 	z-index: 1;
 }
 @media (max-width: 767px) {
