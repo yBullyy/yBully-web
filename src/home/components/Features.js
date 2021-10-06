@@ -1,5 +1,28 @@
 import React from "react";
 
+const featuresList = [
+    {
+        title: 'Fast',
+        desc: 'Scroll through your twitter feed and get your tweets labelled within seconds.',
+        faIconName: 'fas fa-rocket',
+    },
+    {
+        title: 'Responsive',
+        desc: 'Less Effort With Responsive Web Design and Mobile-friendliness.',
+        faIconName: 'fas fa-desktop',
+    },
+    {
+        title: 'Accurate',
+        desc: 'Multiple efficient/accurate models with highest accuracy of 88.5 %.',
+        faIconName: 'fas fa-layer-group',
+    },
+    {
+        title: 'Constantly Learning',
+        desc: 'Model keeps on learning and updating itself based on new tweets reported by user.',
+        faIconName: 'fas fa-chart-line',
+    }
+];
+
 const Features = () => {
     return (
         <section id="explore" className="bg-light section" >
@@ -14,61 +37,23 @@ const Features = () => {
                 </div>
 
                 <div class="row align-items-center">
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="card border-0 features feature-clean course-feature p-4 overflow-hidden shadow">
-                            <div class="icons text-primary text-center">
-                                <i class="fas fa-layer-group d-block rounded mb-0"></i>
+                    {
+                        featuresList.map((feature) => (
+                            <div className="col-lg-3 col-md-6 mt-4 pt-2">
+                                <div className="card border-0 features feature-clean course-feature p-4 overflow-hidden shadow">
+                                    <div class="icons text-primary text-center">
+                                        <i className={feature.faIconName + " d-block rounded mb-0"}></i>
+                                    </div>
+                                    <div className="card-body p-0 mt-4">                                            
+                                        <a href="/" className="title h5 text-dark">{feature.title}</a>
+                                        <p className="text-muted mt-2">{feature.desc}</p>
+                                        <a href="/" className="text-primary read-more">Read More <i className="uil uil-angle-right-b"></i></a>
+                                        <i className={feature.faIconName + " text-primary full-img"}></i>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-body p-0 mt-4">                                            
-                                <a href="/" class="title h5 text-dark">Modular</a>
-                                <p class="text-muted mt-2">Composed in a pseudo-Latin language which more or less corresponds.</p>
-                                <a href="/" class="text-primary read-more">Read More <i class="uil uil-angle-right-b"></i></a>
-                                <i class="fas fa-layer-group text-primary full-img"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="card border-0 features feature-clean course-feature p-4 overflow-hidden shadow">
-                            <div class="icons text-primary text-center">
-                                <i class="fas fa-layer-group d-block rounded mb-0"></i>
-                            </div>
-                            <div class="card-body p-0 mt-4">                                            
-                                <a href="/" class="title h5 text-dark">Responsive</a>
-                                <p class="text-muted mt-2">Composed in a pseudo-Latin language which more or less corresponds.</p>
-                                <a href="/" class="text-primary read-more">Read More <i class="uil uil-angle-right-b"></i></a>
-                                <i class="fas fa-layer-group text-primary full-img"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="card border-0 features feature-clean course-feature p-4 overflow-hidden shadow">
-                            <div class="icons text-primary text-center">
-                                <i class="fas fa-layer-group d-block rounded mb-0"></i>
-                            </div>
-                            <div class="card-body p-0 mt-4">                                            
-                                <a href="/" class="title h5 text-dark">Customizable</a>
-                                <p class="text-muted mt-2">Composed in a pseudo-Latin language which more or less corresponds.</p>
-                                <a href="/" class="text-primary read-more">Read More <i class="uil uil-angle-right-b"></i></a>
-                                <i class="fas fa-layer-group text-primary full-img"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
-                        <div class="card border-0 features feature-clean course-feature p-4 overflow-hidden shadow">
-                            <div class="icons text-primary text-center">
-                                <i class="fas fa-layer-group d-block rounded mb-0"></i>
-                            </div>
-                            <div class="card-body p-0 mt-4">                                            
-                                <a href="/" class="title h5 text-dark">Scalable</a>
-                                <p class="text-muted mt-2">Composed in a pseudo-Latin language which more or less corresponds.</p>
-                                <a href="/" class="text-primary read-more">Read More <i class="uil uil-angle-right-b"></i></a>
-                                <i class="fas fa-layer-group text-primary full-img"></i>
-                            </div>
-                        </div>
-                    </div>
+                        ))
+                    }
                 </div>
             </div>
         </section>
