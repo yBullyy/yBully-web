@@ -18,7 +18,7 @@ const Navbar = () => {
 				{/* Logo container*/}
 				<a className="logo" href="/">
 					<img
-						src="images/.main/yBully-blue.png"
+						src="images/.main/yBully-blue-new.png"
 						height="64"
 						className="logo-light-mode"
 						alt=""
@@ -50,19 +50,19 @@ const Navbar = () => {
 							</Link>
 						</li>
 						<li>
-							<Link to="/">
+							<a href="#explore">
 								<div className="sub-menu-item">Explore</div>
-							</Link>
+							</a>
 						</li>
 						<li>
-							<Link to="/">
+							<a href="#team">
 								<div className="sub-menu-item">About Us</div>
-							</Link>
+							</a>
 						</li>
 						<li>
-							<Link to="/">
+							<a href="#explore">
 								<div className="sub-menu-item">Contact Us</div>
-							</Link>
+							</a>
 						</li>
 						<li>
 							<Link to="/login">

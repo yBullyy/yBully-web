@@ -2876,15 +2876,29 @@ p {
 .agency-wrapper:before {
 	content: "";
 	position: absolute;
-	bottom: 22rem;
+	bottom: 42rem;
 	right: 54rem;
-	width: 90rem;
-	height: 35rem;
-	border-radius: 17rem;
+	width: 20rem;
+	height: 25rem;
+	border-radius: 50%;
 	transform: rotate(45deg);
 	background-color: #f8f9fc;
 	z-index: -1;
 }
+
+.agency-wrapper-2:before {
+	content: "";
+	position: absolute;
+	bottom: 8rem;
+	right: 84rem;
+	width: 36rem;
+	height: 30rem;
+	border-radius: 50%;
+	transform: rotate(45deg);
+	background-color: #f8f9fc;
+	z-index: -1;
+}
+
 @media (max-width: 768px) {
 	.agency-wrapper:before {
 		right: 12rem;
@@ -4939,7 +4953,10 @@ ul .t-ltr-dark {
 	}
 }
 
-/* ============================================== */
+
+/* ================================================================================== */
+/* ================================================================================== */
+
 ::-webkit-scrollbar {
 	width: 6px;
 }
@@ -4952,8 +4969,6 @@ ul .t-ltr-dark {
 ::-webkit-scrollbar-thumb:hover {
 	background: #2f55d4;
 }
-
-
 
 
 
@@ -4987,3 +5002,9 @@ select {
 	transition: .25s all ease;
 }
 
+
+
+.banner-bg-image{
+	/* background: url("../images/bg.png") #2f55d4 center; */
+	/* background-size: cover; */
+}

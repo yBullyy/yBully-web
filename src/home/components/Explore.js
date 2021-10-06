@@ -6,7 +6,7 @@ const Explore = () => {
 			<div className="container">
 				<div className="row align-items-center">
 					<div className="col-lg-5 col-md-6 mt-4 pt-2">
-						<img src="images/.main/SEO_SVG.svg" alt="" />
+						<img src="images/.main/explore_image.png"  alt="" />
 					</div>
 					{/*end col*/}
 
