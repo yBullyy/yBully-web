@@ -19,9 +19,9 @@ export default function Banner() {
                                     <a href="/" className="btn btn-primary mt-2 me-2">
                                         <i className="fas fa-download"></i> Download Now
                                     </a>
-                                    {/* <a href="/" className="btn btn-outline-primary mt-2">
-                                    <i className="uil uil-book-alt"></i> Documentation
-                                </a> */}
+                                    <a href="https://github.com/yBullyy" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary mt-2">
+                                        <i class="fab fa-github"></i> Github
+                                    </a>
                                 </div>
                             </div>
                         </div>

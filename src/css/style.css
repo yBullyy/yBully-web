@@ -2882,7 +2882,8 @@ p {
 	height: 25rem;
 	border-radius: 50%;
 	transform: rotate(45deg);
-	background-color: #f8f9fc;
+	/* background-color: #f8f9fc; */
+	background-color: rgba(47, 85, 212, 0.1);
 	z-index: -1;
 }
 
@@ -2895,7 +2896,8 @@ p {
 	height: 30rem;
 	border-radius: 50%;
 	transform: rotate(45deg);
-	background-color: #f8f9fc;
+	/* background-color: #f8f9fc; */
+	background-color: rgba(47, 85, 212, 0.1);
 	z-index: -1;
 }
 
@@ -5007,4 +5009,17 @@ select {
 .banner-bg-image{
 	/* background: url("../images/bg.png") #2f55d4 center; */
 	/* background-size: cover; */
+}
+
+.contact-card{
+	background-color: #f8f9fc;
+}
+
+.contact-card .icons i{
+	font-size: larger;
+}
+
+
+.card.features .icons i{
+	font-size: 20px;
 }

@@ -29,18 +29,29 @@ const Footer = () => (
                                 <h5 className="footer-head">Company</h5>
                                 <ul className="list-unstyled footer-list mt-4">
                                     <li>
-                                        <a href="/" className="text-foot">
+                                        <a href="#explore" className="text-foot">
+                                            <i className="uil uil-angle-right-b me-1"></i> Explore
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#team" className="text-foot">
                                             <i className="uil uil-angle-right-b me-1"></i> About us
                                         </a>
                                     </li>
+                                    
                                     <li>
-                                        <a href="/" className="text-foot">
-                                            <i className="uil uil-angle-right-b me-1"></i> Services
+                                        <a href="#contactus" className="text-foot">
+                                            <i className="uil uil-angle-right-b me-1"></i> Contact Us
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/" className="text-foot">
+                                        <a href="#team" className="text-foot">
                                             <i className="uil uil-angle-right-b me-1"></i> Team
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/admin" className="text-foot">
+                                            <i className="uil uil-angle-right-b me-1"></i> Admin
                                         </a>
                                     </li>
 
@@ -53,14 +64,12 @@ const Footer = () => (
                                 <ul className="list-unstyled footer-list mt-4">
                                     <li>
                                         <a href="/" className="text-foot">
-                                            <i className="uil uil-angle-right-b me-1"></i> Terms of
-                                            Services
+                                            <i className="uil uil-angle-right-b me-1"></i> yBully Chrome Extension
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/" className="text-foot">
-                                            <i className="uil uil-angle-right-b me-1"></i> Privacy
-                                            Policy
+                                        <a href="https://github.com/yBullyy/yBully-web" className="text-foot">
+                                            <i className="uil uil-angle-right-b me-1"></i> Source Code
                                         </a>
                                     </li>
                                 </ul>

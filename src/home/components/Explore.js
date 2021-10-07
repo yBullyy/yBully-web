@@ -13,9 +13,12 @@ const Explore = () => {
 					<div className="col-lg-7 col-md-6 mt-4 pt-2">
 						<div className="section-title ms-lg-5">
 							<h4 className="title mb-4">Try out now</h4>
-
+							{/* <div class="alert bg-soft-success" role="alert">No Cyberbullying Detected.</div> */}
+							{/* <div class="alert bg-soft-danger" role="alert">Cyberbullying Detected ! </div> */}
 							<div>
-								<label className="form-label">Select Model</label>
+								<label className="form-label">
+									Select Model <span class="badge rounded-pill bg-success">88.5%</span> 
+								</label>
 								<div class="s-select">
 									<select>
 										<option value="1">Model 1</option>
@@ -23,7 +26,9 @@ const Explore = () => {
 										<option value="3">Model 3</option>
 									</select>
 								</div>
+								
 							</div>
+							
 
 							{/* Form */}
 							<div className="col-lg-12">
