@@ -15,11 +15,11 @@ const Footer = () => (
                                     
                                 </p>
                                 <ul className="list-unstyled social-icon social-icon-footer foot-social-icon mb-0 mt-4">
-                                    <li class="list-inline-item"><a href="https://github.com/yBullyy" class="rounded"><i data-feather="facebook" class="fab fa-github fa-lg"></i></a></li>
-                                    <li class="list-inline-item"><a href="/" class="rounded"><i data-feather="instagram" class="fab fa-instagram fa-lg"></i></a></li>
-                                    <li class="list-inline-item"><a href="/" class="rounded"><i data-feather="twitter" class="fab fa-twitter fa-lg"></i></a></li>
-                                    <li class="list-inline-item"><a href="/" class="rounded"><i data-feather="linkedin" class="fab fa-linkedin fa-lg"></i></a></li>
-                                    <li class="list-inline-item"></li>
+                                    <li className="list-inline-item"><a href="https://github.com/yBullyy" className="rounded"><i data-feather="facebook" className="fab fa-github fa-lg"></i></a></li>
+                                    <li className="list-inline-item"><a href="/" className="rounded"><i data-feather="instagram" className="fab fa-instagram fa-lg"></i></a></li>
+                                    <li className="list-inline-item"><a href="/" className="rounded"><i data-feather="twitter" className="fab fa-twitter fa-lg"></i></a></li>
+                                    <li className="list-inline-item"><a href="/" className="rounded"><i data-feather="linkedin" className="fab fa-linkedin fa-lg"></i></a></li>
+                                    <li className="list-inline-item"></li>
                                 </ul>
                                 {/*end icon*/}
                             </div>

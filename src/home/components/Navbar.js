@@ -46,32 +46,32 @@ const Navbar = () => {
 					<ul className="navigation-menu">
 						<li>
                             <Link to="/">
-								<div className="sub-menu-item"><i class="fas fa-home"></i> Home</div>
+								<div className="sub-menu-item"><i className="fas fa-home"></i> Home</div>
 							</Link>
 						</li>
 						<li>
 							<a href="#explore">
-								<div className="sub-menu-item"><i class="fas fa-search-plus"></i> Explore</div>
+								<div className="sub-menu-item"><i className="fas fa-search-plus"></i> Explore</div>
 							</a>
 						</li>
 						<li>
 							<a href="#team">
-								<div className="sub-menu-item"><i class="fas fa-users"></i> About Us</div>
+								<div className="sub-menu-item"><i className="fas fa-users"></i> About Us</div>
 							</a>
 						</li>
 						<li>
 							<a href="#contactus">
-								<div className="sub-menu-item"><i class="fas fa-phone-alt"></i> Contact Us</div>
+								<div className="sub-menu-item"><i className="fas fa-phone-alt"></i> Contact Us</div>
 							</a>
 						</li>
+						{/* <li>
+							<Link to="/login">
+								<div className="sub-menu-item"><i className="fas fa-sign-in-alt"></i> Login </div>
+							</Link>
+						</li> */}
 						<li>
 							<Link to="/login">
-								<div className="sub-menu-item"><i class="fas fa-sign-in-alt"></i> Login </div>
-							</Link>
-						</li>
-						<li>
-							<Link to="/admin">
-								<div className="sub-menu-item"><i class="fas fa-user-cog"></i> Admin</div>
+								<div className="sub-menu-item"><i className="fas fa-user-cog"></i> Admin</div>
 							</Link>
 						</li>
 						{/* <li>

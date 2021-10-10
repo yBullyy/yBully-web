@@ -14,7 +14,7 @@ const featuresList = [
     {
         title: 'Accurate',
         desc: 'Multiple efficient/accurate models with highest accuracy of 88.5 %.',
-        faIconName: 'fas fa-layer-group',
+        faIconName: 'fas fa-bullseye',
     },
     {
         title: 'Constantly Learning',
@@ -26,22 +26,22 @@ const featuresList = [
 const Features = () => {
     return (
         <section id="explore" className="bg-light section" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="section-title pb-2">
-                            <h4 class="title mb-1">Key Features</h4>
-                            {/* <p class="para-desc text-muted mb-0">Start working with <span class="text-primary fw-bold">Landrick</span> that can provide everything you need to generate awareness, drive traffic, connect.</p> */}
+            <div className="container">
+                <div className="row">
+                    <div className="col-12">
+                        <div className="section-title pb-2">
+                            <h4 className="title mb-1">Key Features</h4>
+                            {/* <p className="para-desc text-muted mb-0">Start working with <span className="text-primary fw-bold"></span> that can provide everything you need to generate awareness, drive traffic, connect.</p> */}
                         </div>
                     </div>
                 </div>
 
-                <div class="row align-items-center">
+                <div className="row align-items-center">
                     {
-                        featuresList.map((feature) => (
-                            <div className="col-lg-3 col-md-6 mt-4 pt-2">
+                        featuresList.map((feature, i) => (
+                            <div className="col-lg-3 col-md-6 mt-4 pt-2" key={i}>
                                 <div className="card border-0 features feature-clean course-feature p-4 overflow-hidden shadow">
-                                    <div class="icons text-primary text-center">
+                                    <div className="icons text-primary text-center">
                                         <i className={feature.faIconName + " d-block rounded mb-0"}></i>
                                     </div>
                                     <div className="card-body p-0 mt-4">                                            

@@ -1,13 +1,3 @@
-/* Template Name: Landrick - Saas & Software Landing Page Template
-   Author: Shreethemes
-   E-mail: support@shreethemes.in
-   Created: August 2019
-   Version: 3.8.0
-   Updated: July 2021
-   File Description: Main JS file of the template
-*/
-
-
 /*********************************/
 /*         INDEX                 */
 /*================================
@@ -20,7 +10,7 @@
  *     06.  DD Menu              *
  *     06.  Active Sidebar Menu  *
  *     07.  Contact us           *
- ================================*/
+================================*/
 
 
 window.addEventListener('load',   fn , false )
@@ -28,14 +18,14 @@ window.addEventListener('load',   fn , false )
 //  window.onload = function loader() {
 function fn() {
     // Preloader
-    if(document.getElementById('preloader')){
-        setTimeout(() => {
-            document.getElementById('preloader').style.visibility = 'hidden';
-            document.getElementById('preloader').style.opacity = '0';
-        }, 350);
-    }
-    // Menus
-    activateMenu();
+    // if(document.getElementById('preloader')){
+    //     setTimeout(() => {
+    //         document.getElementById('preloader').style.visibility = 'hidden';
+    //         document.getElementById('preloader').style.opacity = '0';
+    //     }, 350);
+    // }
+    // // Menus
+    // activateMenu();
 }
 
 //Menu
@@ -185,7 +175,7 @@ function topFunction() {
 })();
 
 //Feather icon
-feather.replace();
+// feather.replace();
 
 // dd-menu
 var ddmenu = document.getElementsByClassName("dd-menu");

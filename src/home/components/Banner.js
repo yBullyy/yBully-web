@@ -20,7 +20,7 @@ export default function Banner() {
                                         <i className="fas fa-download"></i> Download Now
                                     </a>
                                     <a href="https://github.com/yBullyy" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary mt-2">
-                                        <i class="fab fa-github"></i> Github
+                                        <i className="fab fa-github"></i> Github
                                     </a>
                                 </div>
                             </div>

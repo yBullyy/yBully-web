@@ -13,13 +13,13 @@ const Explore = () => {
 					<div className="col-lg-7 col-md-6 mt-4 pt-2">
 						<div className="section-title ms-lg-5">
 							<h4 className="title mb-4">Try out now</h4>
-							{/* <div class="alert bg-soft-success" role="alert">No Cyberbullying Detected.</div> */}
-							{/* <div class="alert bg-soft-danger" role="alert">Cyberbullying Detected ! </div> */}
+							{/* <div className="alert bg-soft-success" role="alert">No Cyberbullying Detected.</div> */}
+							{/* <div className="alert bg-soft-danger" role="alert">Cyberbullying Detected ! </div> */}
 							<div>
 								<label className="form-label">
-									Select Model <span class="badge rounded-pill bg-success">88.5%</span> 
+									Select Model <span className="badge rounded-pill bg-success">88.5%</span> 
 								</label>
-								<div class="s-select">
+								<div className="s-select">
 									<select>
 										<option value="1">Model 1</option>
 										<option value="2">Model 2</option>
