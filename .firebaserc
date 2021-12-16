@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "ybullyy"
+  },
+  "targets": {
+    "ybullyy": {
+      "hosting": {
+        "ybully-web": [
+          "ybullyy"
+        ]
+      }
+    }
   }
 }

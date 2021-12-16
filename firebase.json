@@ -5,6 +5,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
+    "target": "ybully-web",
     "public": "build",
     "ignore": [
       "firebase.json",
