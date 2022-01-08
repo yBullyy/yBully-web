@@ -1,5 +1,4 @@
 import React from "react";
-import "../css/style.css";
 import Explore from "./components/Explore";
 import Features from "./components/Features";
 import Navbar from "./components/Navbar";
@@ -12,7 +11,6 @@ const Home = () => (
 	// Navbar STart
 	<div>
 		<Navbar />
-		
 			<Banner />
 			<Features />
 			<Explore />

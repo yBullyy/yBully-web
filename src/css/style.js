@@ -1,4 +1,8 @@
+import { createGlobalStyle } from 'styled-components';
+
+export const GlobalStyle = createGlobalStyle`
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&amp;display=swap");
+
 @media (min-width: 1400px) {
 	.container {
 		max-width: 1140px !important;
@@ -5023,3 +5027,4 @@ select {
 .card.features .icons i{
 	font-size: 20px;
 }
+`;
