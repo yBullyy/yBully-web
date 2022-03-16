@@ -1,12 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
+import { useAlert } from 'react-alert';
+
+const API_ENDPOINT = "http://localhost:8000/predict";
 
 const Explore = () => {
+	const [text, setText] = useState('');
+	const alert = useAlert();
+
+	const onPredictBtnClick = async () => {
+		try {
+			const response = await fetch(API_ENDPOINT, {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({ 'data': [text] }),
+			});
+			const data = await response.json();
+			let confidence = data.predictions[0].confidence;
+			let confidenceRoundOff = Math.round(confidence * 100) / 100;
+			let errorMsg = <div style={{ textTransform: 'initial' }} >Cyberbullying Text Detected! Confidence: {confidenceRoundOff} </div>
+			let successMsg = <div style={{ textTransform: 'initial' }} >No Cyberbullying ! Confidence: {confidenceRoundOff} </div>
+			if(confidence > 0.5) {
+				alert.error(errorMsg);
+			} else {
+				alert.success(successMsg);
+			}
+			console.log(data);
+		} catch (error) {
+			console.log({ error });
+		}
+	};
+
 	return (
 		<section className="section-bottom bg-light border-bottom">
 			<div className="container">
 				<div className="row align-items-center">
 					<div className="col-lg-5 col-md-6 mt-4 pt-2">
-						<img src="images/.main/explore_image.png"  alt="" />
+						<img src="images/.main/explore_image.png" alt="" />
 					</div>
 					{/*end col*/}
 
@@ -17,7 +48,7 @@ const Explore = () => {
 							{/* <div className="alert bg-soft-danger" role="alert">Cyberbullying Detected ! </div> */}
 							<div>
 								<label className="form-label">
-									Select Model <span className="badge rounded-pill bg-success">88.5%</span> 
+									Select Model <span className="badge rounded-pill bg-success">88.5%</span>
 								</label>
 								<div className="s-select">
 									<select>
@@ -26,9 +57,9 @@ const Explore = () => {
 										<option value="3">Model 3</option>
 									</select>
 								</div>
-								
+
 							</div>
-							
+
 
 							{/* Form */}
 							<div className="col-lg-12">
@@ -39,7 +70,8 @@ const Explore = () => {
 											type="text"
 											className="form-control"
 											placeholder="Type here..."
-											required=""
+											value={text}
+											onChange={(e) => setText(e.target.value)}
 										/>
 									</div>
 								</div>
@@ -48,7 +80,7 @@ const Explore = () => {
 
 							<div className="col-lg-12 mt-2 mb-0">
 								<div className="d-grid">
-									<button className="btn btn-primary">Predict</button>
+									<button onClick={onPredictBtnClick} className="btn btn-primary">Predict</button>
 								</div>
 							</div>
 						</div>
