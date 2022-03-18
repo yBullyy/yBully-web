@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import { useAlert } from 'react-alert';
+import ReactLoading from 'react-loading';
 
 const API_ENDPOINT = "http://localhost:8000/predict";
 
 const Explore = () => {
 	const [text, setText] = useState('');
+	const [isLoading, setIsLoading] = useState(false);
+	
 	const alert = useAlert();
 
 	const onPredictBtnClick = async () => {
 		try {
+			setIsLoading(true);
 			const response = await fetch(API_ENDPOINT, {
 				method: "POST",
 				headers: {
@@ -17,6 +21,7 @@ const Explore = () => {
 				body: JSON.stringify({ 'data': [text] }),
 			});
 			const data = await response.json();
+			setIsLoading(false);
 			let confidence = data.predictions[0].confidence;
 			let confidenceRoundOff = Math.round(confidence * 100) / 100;
 			let errorMsg = <div style={{ textTransform: 'initial' }} >Cyberbullying Text Detected! Confidence: {confidenceRoundOff} </div>
@@ -28,6 +33,7 @@ const Explore = () => {
 			}
 			console.log(data);
 		} catch (error) {
+			setIsLoading(false);
 			console.log({ error });
 		}
 	};
@@ -80,7 +86,13 @@ const Explore = () => {
 
 							<div className="col-lg-12 mt-2 mb-0">
 								<div className="d-grid">
-									<button onClick={onPredictBtnClick} className="btn btn-primary">Predict</button>
+									<button style={{ display: 'flex', justifyContent: 'center' }} onClick={onPredictBtnClick} className="btn btn-primary">
+										{
+											isLoading ?
+											<ReactLoading type="spinningBubbles" height="32px" width="32px" />
+											: 'Predict'
+										}
+									</button>
 								</div>
 							</div>
 						</div>
