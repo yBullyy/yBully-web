@@ -70,7 +70,7 @@ const Navbar = () => {
 							</Link>
 						</li> */}
 						<li>
-							<a target="_blank" href="https://ybully-admin.firebaseapp.com/">
+							<a target="_blank" rel="noreferrer" href="https://ybully-admin.firebaseapp.com/">
 								<div className="sub-menu-item"><i className="fas fa-user-cog"></i> Admin</div>
 							</a>
 						</li>
