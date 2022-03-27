@@ -70,9 +70,9 @@ const Navbar = () => {
 							</Link>
 						</li> */}
 						<li>
-							<Link to="/login">
+							<a target="_blank" href="https://ybully-admin.firebaseapp.com/">
 								<div className="sub-menu-item"><i className="fas fa-user-cog"></i> Admin</div>
-							</Link>
+							</a>
 						</li>
 						{/* <li>
                             <Link to="/admin">
