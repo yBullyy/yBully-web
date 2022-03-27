@@ -9,28 +9,28 @@ const team = [
         linkedin: 'https://www.linkedin.com/in/shahshubh/',
     },
     {
-        name: 'Chintan Modi',
-        imagePath: 'images/.main/01.jpg',
-        github: 'https://github.com/cmodi009',
-        insta: '',
-        linkedin: '',
-        twitter: ''
-    },
-    {
         name: 'Nilay Sheth',
-        imagePath: 'images/.main/01.jpg',
+        imagePath: 'https://cdn.landesa.org/wp-content/uploads/default-user-image.png',
         github: 'https://github.com/nilay1221',
         insta: '',
         linkedin: '',
-        twitter: ''
+        // twitter: ''
     },
     {
         name: 'Nishit Shah',
-        imagePath: 'images/.main/01.jpg',
+        imagePath: 'https://cdn.landesa.org/wp-content/uploads/default-user-image.png',
         github: 'https://github.com/nishit767',
         insta: '',
         linkedin: '',
-        twitter: ''
+        // twitter: ''
+    },
+    {
+        name: 'Chintan Modi',
+        imagePath: 'https://cdn.landesa.org/wp-content/uploads/default-user-image.png',
+        github: 'https://github.com/cmodi009',
+        insta: '',
+        linkedin: '',
+        // twitter: ''
     }
 ]
 
