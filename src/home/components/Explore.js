@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useAlert } from 'react-alert';
 import ReactLoading from 'react-loading';
 
-const API_ENDPOINT = process.env.REACT_APP_API_ENDPOINT;
+const API_ENDPOINT = 'https://ybully-api.azurewebsites.net/predict';
 
 const Explore = () => {
 	const [text, setText] = useState('');
