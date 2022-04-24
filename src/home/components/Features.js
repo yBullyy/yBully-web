@@ -2,8 +2,8 @@ import React from "react";
 
 const featuresList = [
     {
-        title: 'Fast',
-        desc: 'Scroll through your twitter feed and get your tweets labelled within seconds.',
+        title: 'Low Latency (Fast)',
+        desc: 'Scroll through your twitter feed and get your tweets labelled within milliseconds.',
         faIconName: 'fas fa-rocket',
     },
     {
@@ -13,7 +13,7 @@ const featuresList = [
     },
     {
         title: 'Accurate',
-        desc: 'Multiple efficient/accurate models with highest accuracy of 88.5 %.',
+        desc: 'Multiple efficient/accurate models with highest accuracy of 95.26 %.',
         faIconName: 'fas fa-bullseye',
     },
     {

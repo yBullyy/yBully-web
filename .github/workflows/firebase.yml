@@ -46,10 +46,6 @@ jobs:
         with:
           name: build
           path: build
-      - name: Create env file
-        run: |
-          touch .env
-          echo API_ENDPOINT=${{ secrets.REACT_APP_API_ENDPOINT }} >> .env
       - name: Depoy to Firebase
         uses: w9jds/firebase-action@master
         with:
