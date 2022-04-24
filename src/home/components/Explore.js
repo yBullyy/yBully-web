@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useAlert } from 'react-alert';
 import ReactLoading from 'react-loading';
 
-const API_ENDPOINT = "http://localhost:8000/predict";
+const API_ENDPOINT = process.env.API_ENDPOINT;
 
 const Explore = () => {
 	const [text, setText] = useState('');
@@ -52,7 +52,7 @@ const Explore = () => {
 							<h4 className="title mb-4">Try out now</h4>
 							{/* <div className="alert bg-soft-success" role="alert">No Cyberbullying Detected.</div> */}
 							{/* <div className="alert bg-soft-danger" role="alert">Cyberbullying Detected ! </div> */}
-							<div>
+							{/* <div>
 								<label className="form-label">
 									Select Model <span className="badge rounded-pill bg-success">88.5%</span>
 								</label>
@@ -63,14 +63,16 @@ const Explore = () => {
 										<option value="3">Model 3</option>
 									</select>
 								</div>
-
-							</div>
-
+							</div> */}
 
 							{/* Form */}
 							<div className="col-lg-12">
 								<div className="mb-3">
-									<label className="form-label">Enter your text</label>
+									<span class="badge rounded-pill bg-success">95.26% Accuracy</span>
+									<br />
+									<label className="form-label">
+										Enter your text
+									</label>
 									<div className="form-icon position-relative">
 										<textarea
 											type="text"
