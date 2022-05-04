@@ -45,7 +45,7 @@ Screenshots
 License
 --------
 
-[[License: Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-yellow.svg)](https://github.com/yBullyy/yBully-web/blob/master/LICENSE)
+[![License: Apache License 2.0](https://img.shields.io/badge/License-Apache_2.0-yellow.svg)](https://github.com/yBullyy/yBully-web/blob/master/LICENSE)
 
 
 Stargazers
