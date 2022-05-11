@@ -16,7 +16,7 @@ export default function Banner() {
                                     tweets on twitter.
                                 </p>
                                 <div className="mt-4">
-                                    <a href="ybully.zip" className="btn btn-primary mt-2 me-2">
+                                    <a href="ybully_1.0.0.zip" className="btn btn-primary mt-2 me-2">
                                         <i className="fas fa-download"></i> Download Now
                                     </a>
                                     <a href="https://github.com/yBullyy" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary mt-2">
